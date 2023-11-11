@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 5</title>
+    <script src="main.js"></script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div style="padding: 30px">
+        <input
+          type="checkbox"
+          id="box1"
+          onclick="verificarDisponibilidadeBotao(this)"
+        />
+        <input
+          type="checkbox"
+          id="box2"
+          onclick="verificarDisponibilidadeBotao(this)"
+        />
+        <input
+          type="checkbox"
+          id="box3"
+          onclick="verificarDisponibilidadeBotao(this)"
+        />
+        <input
+          type="checkbox"
+          id="box4"
+          onclick="verificarDisponibilidadeBotao(this)"
+        />
+        <input
+          type="checkbox"
+          id="box5"
+          onclick="verificarDisponibilidadeBotao(this)"
+        />
+      </div>
+      <button type="button" disabled>CLIQUE</button>
+    </form>
+  </body>
+</html>

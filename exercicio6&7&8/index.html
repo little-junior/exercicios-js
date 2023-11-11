@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 6&7&8</title>
+    <script src="main.js"></script>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      p {
+        max-width: 800px;
+        text-align: center;
+      }
+
+      .content {
+        margin: 15px 0px;
+      }
+
+      button {
+        font-size: 18px;
+        margin: 0px 4px;
+      }
+      #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quos hic
+      quibusdam porro. Recusandae labore, eos, quo maiores eius placeat magnam
+      beatae ad tempora quod consequuntur, harum commodi alias iste?
+    </p>
+
+    <div id="container">
+      <div class="content">
+        <button type="button" onclick="mudarCorFonte('white')">
+          Fonte branca
+        </button>
+        <button type="button" onclick="mudarCorFonte('black')">
+          Fonte preta
+        </button>
+        <button type="button" onclick="mudarCorFundo('white')">
+          Fundo branco
+        </button>
+        <button type="button" onclick="mudarCorFundo('black')">
+          Fundo preto
+        </button>
+      </div>
+
+      <div class="content">
+        <button type="button" onclick="diminuirFonte()">-</button>
+        <button type="button" onclick="aumentarFonte()">+</button>
+      </div>
+      <div class="content">
+        <button type="button" onclick="transformarMaiusculo()">
+          Texto maiusculo
+        </button>
+        <button type="button" onclick="transformarMinusculo()">
+          Texto minusculo
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

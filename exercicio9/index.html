@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 9</title>
+    <script src="main.js"></script>
+    <style>
+      form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 90vh;
+      }
+
+      form input {
+        max-width: fit-content;
+        margin: 10px;
+      }
+
+      form label {
+        font-size: 20px;
+      }
+
+      form button {
+        font-size: 15px;
+        padding: 3px 10px;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      action="https://w7.pngwing.com/pngs/341/656/png-transparent-lovely-smile-lovely-smile-thumbs-up-thumbnail.png"
+    >
+      <label for="login">Login:</label>
+      <input type="text" id="login" required />
+
+      <label for="confirmacao-senha">Senha:</label>
+      <input type="password" id="senha" required />
+
+      <label for="confirmacao-senha">Confirmar senha:</label>
+      <input type="password" id="confirmacao-senha" required />
+
+      <button type="button" onclick="verificarSenha()">Enviar</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 3</title>
+    <script src="main.js"></script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        font-size: 40px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <input
+          type="radio"
+          id="creme"
+          name="cores"
+          value="creme"
+          onclick="mudarCreme()"
+        />
+        <label for="creme">Creme</label>
+      </li>
+      <li>
+        <input
+          type="radio"
+          id="marrom"
+          name="cores"
+          value="marrom"
+          onclick="mudarMarrom()"
+        />
+        <label for="marrom">Marrom</label>
+      </li>
+      <li>
+        <input
+          type="radio"
+          id="lilas"
+          name="cores"
+          value="lilas"
+          onclick="mudarLilas()"
+        />
+        <label for="lilas">Lilas</label>
+      </li>
+      <li>
+        <input
+          type="radio"
+          id="ciano"
+          name="cores"
+          value="ciano"
+          onclick="mudarCiano()"
+        />
+        <label for="ciano">Ciano</label>
+      </li>
+    </ul>
+  </body>
+</html>

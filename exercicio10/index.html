@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 10</title>
+    <script src="main.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      div {
+        margin: 10px 0px;
+      }
+
+      form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      form label {
+        font-size: 20px;
+      }
+
+      form button {
+        font-size: 17px;
+        margin: 10px;
+        padding: 2px 5px;
+      }
+
+      .content {
+        display: block;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      action="https://w7.pngwing.com/pngs/341/656/png-transparent-lovely-smile-lovely-smile-thumbs-up-thumbnail.png"
+      onsubmit="alertaSucesso()"
+    >
+      <div class="content">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required />
+      </div>
+
+      <div class="content">
+        <div>
+          <input
+            type="radio"
+            name="pessoa"
+            id="pjuridica"
+            onclick="ativarCampo()"
+            required
+          />
+          <label for="pjuridica">P. Juridica</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="pessoa"
+            id="pfisica"
+            onclick="ativarCampo()"
+            required
+          />
+          <label for="pfisica">P. Fisica</label>
+        </div>
+      </div>
+
+      <div class="content">
+        <label for="cnpj">CNPJ: </label>
+        <input type="text" id="cnpj" disabled required />
+        <label for="cpf">CPF: </label>
+        <input type="text" id="cpf" pattern="\d{11,11}" disabled required />
+      </div>
+      <div class="content">
+        <label for="datanascimento">Data de nascimento: </label>
+        <input
+          type="text"
+          id="datanascimento"
+          placeholder="ddmmyyyy"
+          pattern="\d{8,8}"
+          disabled
+          required
+        />
+      </div>
+      <div class="content">
+        <label for="endereco">Endereço: </label>
+        <input type="text" id="endereco" required />
+        <label for="cep">CEP: </label>
+        <input type="text" id="cep" pattern="\d{8,8}" required />
+      </div>
+
+      <div class="content">
+        <label for="telefone">Telefone: </label>
+        <input type="text" id="telefone" pattern="\d{11,11}" required />
+        <label for="email">Email: </label>
+        <input type="email" id="email" required />
+      </div>
+      <button id="botao">Cadastrar</button>
+    </form>
+  </body>
+</html>

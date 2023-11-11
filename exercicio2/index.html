@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 2</title>
+    <script src="main.js"></script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        height: 90vh;
+      }
+
+      div {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+      }
+
+      a {
+        margin-top: 30px;
+        font-size: 30px;
+        width: fit-content;
+        text-decoration: none;
+      }
+
+      #laranja:visited {
+        color: orange;
+      }
+
+      #cinza:visited {
+        color: grey;
+      }
+
+      #roxo:visited {
+        color: purple;
+      }
+
+      #rosa:visited {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a
+        href=""
+        onmouseover="onmouseLaranja()"
+        onmouseout="fundoBranco()"
+        id="laranja"
+        >Laranja</a
+      >
+      <a
+        href=""
+        onmouseover="onmouseCinza()"
+        onmouseout="fundoBranco()"
+        id="cinza"
+        >Cinza</a
+      >
+      <a
+        href=""
+        onmouseover="onmouseRoxo()"
+        onmouseout="fundoBranco()"
+        id="roxo"
+        >Roxo</a
+      >
+      <a
+        href=""
+        onmouseover="onmouseRosa()"
+        onmouseout="fundoBranco()"
+        id="rosa"
+        >Rosa</a
+      >
+    </div>
+  </body>
+</html>
